@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.content {
+    text-align: center;
+}
+
+.pagina {
+    display: none;
+    padding: 20px;
+}
+
+.pagina h1 {
+    font-size: 24px;
+}
+
+.pagina p {
+    font-size: 16px;
+}
