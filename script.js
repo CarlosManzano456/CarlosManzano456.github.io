@@ -4,15 +4,19 @@ const pagina1 = document.getElementById('pagina1');
 const pagina2 = document.getElementById('pagina2');
 
 button1.addEventListener('click', () => {
-    camposVacios();
-    pagina1.style.display = 'block';
-    pagina2.style.display = 'none';
+    let res = camposVacios();
+    if(res){
+        pagina1.style.display = 'block';
+        pagina2.style.display = 'none';
+    }
 });
 
 button2.addEventListener('click', () => {
-    camposVacios();
-    pagina1.style.display = 'none';
-    pagina2.style.display = 'block';
+    let res = camposVacios();
+    if (res) {
+        pagina1.style.display = 'none';
+        pagina2.style.display = 'block';
+    }
 });
 
 //////////////////////////////////////////////////////
@@ -34,5 +38,7 @@ function camposVacios(){
 
     if (texto == ""){
         alert("El texto a cifrar esta vacio");
+        return false;
     }
+    return true;
 }
