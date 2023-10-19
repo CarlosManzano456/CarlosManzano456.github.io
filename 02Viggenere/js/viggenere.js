@@ -47,27 +47,34 @@ var textoRecivido;
 })();
 
 function longitudCifrar(){
-    camposVacios();
+    let res = camposVacios();
+
     var texto = document.getElementById("txt").value;
     var clave = document.getElementById("txtClave").value;
 
     if(clave.length > texto.length){
         alert("La clave no puede ser mas larga que el texto a cifrar");
     }else{
-        codificar(texto, clave);
+        if(res){
+            codificar(texto, clave);
+        }
+        
     }
 }
 
 
 function longitudDescifrar(){
-    camposVacios();
+    let res = camposVacios();
     var texto = document.getElementById("txt").value;
     var clave = document.getElementById("txtClave").value;
 
     if(clave.length > texto.length){
         alert("La clave no puede ser mas larga que el texto a cifrar");
     }else{
-        decodificar(texto, clave);
+        if (res) {
+            decodificar(texto, clave);
+        }
+        
     }
 }
 
@@ -129,9 +136,13 @@ function camposVacios(){
 
     if(texto == ""){
         alert("El texto a cifrar no puede estar vacio");
+        return false;
     }if(clave == ""){
         alert("La clave no puede estar vacia");
+        return false;
     }
+
+    return true;
 }
 
 function colocar(){
