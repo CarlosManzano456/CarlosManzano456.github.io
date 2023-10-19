@@ -13,12 +13,16 @@
         <div class="row" >
             <div class="col-md-12" >
                 <div class="form-group" >
+
                     <label for="texto">Texto a cifrar: </label>
                     <textarea type="text" name="texto" id="texto" class="form-control"></textarea>
+
+                    <label for="texto">Texto a decifrar: </label>
+                    <textarea type="text" name="texto" id="textodescrifar" class="form-control"></textarea>
                 </div>
             </div>
             <div class="col-md-12" >
-                <div class="form-group" >
+                <div class="form-group">
                     <label for="desplazamiento">Desplazamiento </label>
                     <input type="range" min="1" max="25" step="1" value="1" id="desplazamiento" name="desplazamiento" class="form-control">
                 </div>
@@ -26,7 +30,9 @@
             <div class="col-md-12" >
                 <div class="form-group" >
                     <label for="cifrado">Texto cifrado: </label>
-                    <textarea type="text" name="cifrado" id="cifrado" class="form-control" disabled="disabled">  </textarea>
+                    <textarea type="text" name="cifrado" id="cifrado" class="form-control" disabled="disabled"> </textarea>
+                    <label for="cifrado">Texto decifrado: </label>
+                    <textarea type="text" name="cifrado" id="decifrado_res" class="form-control" disabled="disabled"> </textarea>
                 </div>
             </div>
         </div>
