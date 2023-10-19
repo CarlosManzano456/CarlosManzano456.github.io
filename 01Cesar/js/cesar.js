@@ -60,6 +60,10 @@ function descifrar() {
         } else if (valorEntero >= 48 && valorEntero <= 57) {
             // Caracter es un número
             valorEntero = ((valorEntero - 48 - valorDesplazamiento) % 10) + 48;
+            if (valorEntero<48) {
+                valorEntero = 57-(47-valorEntero);
+                console.log("hola");
+            }
         }
         console.log(valorEntero)
 
